@@ -1,0 +1,33 @@
+{
+  "name": "some-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "custom-react-scripts": "0.2.2",
+    "enzyme": "^3.4.4",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-test-render": "^1.1.1",
+    "react-transition-group": "^2.4.0",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "NODE_ENV=testing jest jest",
+    "test:watch": "jest --watch",
+    "eject": "react-scripts eject"
+  },
+  "jest": {
+    "modules": false,
+    "setupTestFrameworkScriptFile": "./src/__tests__/setup/setupEnzyme.js",
+    "testPathIgnorePatterns": ["./src/__tests__/setup/"]
+  }
+}
